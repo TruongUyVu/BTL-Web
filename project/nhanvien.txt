@@ -1,0 +1,84 @@
+<!-- <?php 
+                        //$sql = "SELECT * FROM order_detal";
+                       // $result = mysqli_query($conn,$sql);
+                        ?> -->
+          
+            
+            
+          
+    <!-- <div class="form-group">
+          <div class="col-sm-6">
+            <label>Tên nhân viên</label>
+            
+          </div>
+          <form action="" method="POST" accept-charset="utf-8">
+          <div class="col-sm-8">
+            <select name="Ten" id="input" class="form-control" required="required">
+              <option value="0">Ch?n nhân viên</option>
+            <?php while($row = mysqli_fetch_assoc($result)) : ?>
+    
+              <option value="<?php echo $row['id'] ?>"><?php echo $row['Ten_nhan_vien'] ?></option>
+            <?php endwhile; ?>
+            </select>
+            <br>
+            <input type="submit" name="submit" value="Ki?m tra">
+            <br>
+            <table id="" class="table table-bordered table-hover">
+                <thead>
+                <tr>
+                  <th>Tên s?n ph?m</th>
+                  <th>Tên nhân viên</th>
+                  
+                  <th>S? lu?ng bán du?c</th>
+                  <th>T?ng ti?n</th>
+                  <th>Ghi chú</th>
+    
+                </tr>
+                </thead>
+                <tbody>
+    
+             
+              <?php 
+                if (!empty($_POST['Ten'])) { 
+                  
+                 
+                $sqlnv = "SELECT * FROM order_detal WHERE Ten = $_POST('Ten_nhan_vien')";
+                $querynv = mysqli_query($conn,$sqlnv);
+                
+                
+    
+                  }else{
+                   /* echo "Ch?n tên nhân viên";*/
+                  }
+    
+                ?>
+                <?php
+                $tongdoanhthu1 = 0;
+                while($dongnv = mysqli_fetch_array($querynv)){
+                $sql_chitiet = "SELECT * FROM san_pham WHERE Ten_sp = '".$dongnv['product_id']."' ";
+                $query3 = mysqli_query($conn,$sql_chitiet);
+                $dong2 = mysqli_fetch_array($query3);
+                
+                 ?>
+                 <tr>
+                 <td><?php echo $dong1['product_id'] ?></td>
+                 <td><?php echo $dong1['Ten_nhan_vien'] ?></td>
+    
+                 <td><?php echo $dong1['daban'] ?></td>
+                  <td><?php echo number_format ($dong2['Gia_sp']) ?> VNÐ</td>
+                  
+                 <td><?php if($dong1['Gia_sp'] >= 400000000){ echo 'Ð?t doanh thu cao' ;
+                  $tongdoanhthu += $dong1['daban']*$dong2['Gia_sp']; }
+                 else {
+                  echo 'Bình thu?ng';
+                 } ?></td>
+               <?php } ?>
+               <tr>
+                 <th colspan="5">T?ng doanh thu bán hàng: <?php if(isset($_POST['submit'])){ echo number_format($tongdoanhthu1, 0, ',', '.');} ?> VNÐ </th>
+               </tr>
+    
+                </tbody>
+    
+               
+                
+            </form>     -->

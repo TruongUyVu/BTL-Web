@@ -1,0 +1,74 @@
+
+.sale-off{
+	
+	color: red;
+	width: 50px;
+	padding: 16px 0;
+	border-radius: 100%;
+	position: absolute;
+	top:0;
+	right: 0
+}
+#main {
+    margin-left: 50px;
+}
+.breadcrumb {
+    padding: 10px 15px;
+    border-radius: 0;
+    border-bottom: 1px solid #ddd;
+    margin-top: -2px;
+}
+
+ .footer-hyundai {
+
+    background: #24292E repeat center top;
+    padding: 20px 0px 0px;
+    color: #fff;
+}
+
+
+a {
+    color: #0275d8;
+    text-decoration: none;
+    cursor: pointer;
+}
+.center {
+
+    text-align: center; 
+}
+.footer-hyundai h2 a {
+    color: #ccc;
+    font-weight: bold;
+}
+.footer-content li {
+    
+    font-weight: bold;
+}
+.fa {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.fb_iframe_widget {
+    display: inline-block;
+    position: relative;
+}
+.fb_iframe_widget span {
+    display: inline-block;
+    position: relative;
+    text-align: justify;
+}
+.fb_iframe_widget iframe {
+    position: absolute;
+}
+.map-site {
+    float: left;
+    width: 100%;
+    border: none;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    height: 300px;
+}
